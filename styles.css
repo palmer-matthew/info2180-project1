@@ -4,6 +4,7 @@
     --default-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,'Helvetica Neue', Arial, "Noto Sans",sans-serif;
     --header-link-color: #6b7280;
     --header-hoverlink-color: #5a67d8;
+    --overview-background-color: #f2f2f2;
 }
 
 body {
@@ -46,4 +47,34 @@ header li a{
 
 header li a:hover{
     color: var(--header-hoverlink-color);
+}
+
+/*OVERVIEW SECTION*/
+
+.overview-hero{
+    background-color: var(--overview-background-color);
+    padding: 3% 0;
+}
+
+.overview-hero .container{
+    display: flex;
+    /* align-items: center; */
+}
+
+.overview-hero-image {
+    width: 50%;
+    margin: 0 7%;
+}
+
+.overview-hero-image img{
+    width: 100%;
+    height: auto;
+}
+
+.overview-hero-text {
+    margin-right: 7%;
+}
+
+.overview-hero-text h2{
+    font-weight: normal;
 }
