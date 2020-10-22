@@ -4,7 +4,13 @@
     --default-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,'Helvetica Neue', Arial, "Noto Sans",sans-serif;
     --header-link-color: #6b7280;
     --header-hoverlink-color: #5a67d8;
-    --overview-background-color: #f2f2f2;
+    --overview-background-color: #e1e8f0;
+    --labt-h2-size: 24px;
+    --labt-h3-size: 21px;
+    --labt-header-color: #48BB78;
+    --testing-background-color: #4a5568;
+    --card-border-color: #E2E8F0;
+    --card-radius: 5px;
 }
 
 body {
@@ -58,7 +64,7 @@ header li a:hover{
 
 .overview-hero .container{
     display: flex;
-    /* align-items: center; */
+    align-items: center;
 }
 
 .overview-hero-image {
@@ -78,3 +84,35 @@ header li a:hover{
 .overview-hero-text h2{
     font-weight: normal;
 }
+
+/*LEARN ABOUT SECTION*/
+
+.learn-about .cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+}
+
+.learn-about h2{
+    font-size: var(--labt-h2-size);
+    color: var(--labt-header-color);
+}
+
+.learn-about h3{
+    font-size: var(--labt-h3-size);
+    color: var(--labt-header-color);
+}
+
+.card{
+    border: 1px solid var(--card-border-color);
+    box-shadow: 3px 5px 5px var(--card-border-color);
+    border-radius: var(--card-radius);
+    padding: 20px;
+}
+
+.card img{
+    width: 100%;
+    height: 50%;
+    margin-top: 10px;
+}
+
