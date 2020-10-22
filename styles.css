@@ -9,6 +9,7 @@
     --labt-h3-size: 21px;
     --labt-header-color: #48BB78;
     --testing-background-color: #4a5568;
+    --testing-font-color: white;
     --card-border-color: #E2E8F0;
     --card-radius: 5px;
 }
@@ -59,7 +60,7 @@ header li a:hover{
 
 .overview-hero{
     background-color: var(--overview-background-color);
-    padding: 3% 0;
+    padding: 5% 0;
 }
 
 .overview-hero .container{
@@ -86,6 +87,10 @@ header li a:hover{
 }
 
 /*LEARN ABOUT SECTION*/
+
+.learn-about{
+    margin-bottom: 3%;
+}
 
 .learn-about .cards{
     display: grid;
@@ -116,3 +121,65 @@ header li a:hover{
     margin-top: 10px;
 }
 
+/* TESTING SECTION */
+
+.testing{
+    background-color: var(--testing-background-color);
+    padding: 7% 0;
+    color: var(--testing-font-color);
+}
+
+.testing .container{
+    display: flex;
+    align-items: center;
+}
+
+.cta{
+    margin: 0 10%;
+    padding: 1.5% 3%;
+    width: 20%;
+    border-radius: var(--card-radius);
+    background-color: var(--labt-header-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cta a{
+    color: white;
+    text-decoration: none;
+}
+
+/* RECENT STORIES SECTION */
+
+.stories{
+    padding: 5% 0;
+}
+
+.stories h2{
+    color: var(--header-hoverlink-color);
+}
+
+article{
+    display: flex;
+    align-items: center;
+    margin: 0px 0px 20px 0px;
+}
+
+article img{
+    width: 16%;
+    height: 16%;
+    flex-shrink: 0;
+    border-radius: 50%;
+    margin-right: 3%;
+}
+
+.article-body h3{
+    font-size: var(--default-font-size);
+}
+
+.article-body a{
+    color: var(--header-hoverlink-color);
+    text-decoration: none;
+    font-weight: bold;
+}
