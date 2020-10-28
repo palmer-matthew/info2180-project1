@@ -9,10 +9,8 @@ window.addEventListener("load", (event) => {
         let data = document.forms[0]["email"].value;
         let message = document.querySelector(".message");
         if(data.match(mailformat)){
-            console.log("True");
             message.textContent = `Thank you! Your email address ${data} was added to our mailing list`;
         }else{
-            console.log("False");
             message.textContent = "Please enter a valid email address.";
         }
         document.querySelector("form").reset();
